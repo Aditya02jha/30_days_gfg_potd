@@ -1,0 +1,15 @@
+ int findSum(int A[], int n)
+    {
+    	//code here.
+    	int minm = INT_MAX , maxm = INT_MIN;
+    	for(int i=0;i<n;i++){
+    	    if(minm > A[i]){
+    	        minm = A[i];
+    	    }
+    	    if(maxm < A[i]){
+    	        maxm = A[i];
+    	    }
+    	}
+    	
+    	return (maxm + minm);
+    }
